@@ -1,9 +1,14 @@
 /* Use the Google Fonts API to select one or two fonts to use on the page. */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --font-family: "Open Sans", monospace, san-serif;
-  }
+}
 
 html {
     background-color: #F7F7F7;
@@ -40,4 +45,28 @@ nav a:hover{
 
 nav .active{
     background-color: rgba(0, 0, 0, 3);
+}
+
+.parent {
+    margin: 1rem 2vw;
+}
+
+.parent section{
+    border: 1px solid #415541;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.parent span{
+    background-color: #415541;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.parent p {
+    padding: 10px;
 }

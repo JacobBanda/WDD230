@@ -1,0 +1,53 @@
+/* Use the Google Fonts API to select one or two fonts to use on the page. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header{
+    background-color: #402ee6;
+}
+
+h1 {
+    color: white;
+}
+
+/* Define your typography here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+}
+
+footer{
+    background-color: #4652f8;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }

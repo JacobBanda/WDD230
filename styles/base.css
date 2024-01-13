@@ -1,0 +1,44 @@
+/* Use the Google Fonts API to select one or two fonts to use on the page. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root {
+    --font-family: "Open Sans", monospace, san-serif;
+  }
+
+html {
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+} 
+
+body{
+  font-family: var(--font-family);
+  font-size: 1.44rem;
+  background-image: var(--bg-img);
+  background-size: cover;
+}
+
+main{
+    display: grid;
+}
+
+nav{
+    background-color: green;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    display: black;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: black;
+}
+
+nav .active{
+    background-color: rgba(0, 0, 0, 3);
+}

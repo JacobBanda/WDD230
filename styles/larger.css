@@ -17,4 +17,17 @@
         box-shadow: 1px 1px 10px black;
     }
 
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
 }

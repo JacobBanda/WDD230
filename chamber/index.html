@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Banda">
+    <meta name="description" content="WDD 230 - Web Frontend Development Jacob Mahonri Banda Barboza course assignment portal">
+    <title>[Jacob Banda] - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="WDD 230: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.npr.org/assets/img/2019/11/25/byu-idaho-sign-web_custom-2ae72f4327e557ba4ff2b363d3137528b23374a7-s800-c85.webp">
+    <meta property="og:url" content="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2FJacobBanda%2Fwdd230">
+</head>
+<body>
+    <header>   
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Your Chamber of Commerce</h1>
+        </header>     
+        <main>
+            <section class="hero-image">
+                <img src="images/monterrey_local-office-2_3-.jpg" alt="Hero Image Monterrey">
+                <div>
+                    <h2>Welcome to Your Chamber of Commerce</h2>
+                </div>
+            </section>
+    
+            <section class="cta-section">
+                <p>Join the Chamber of Commerce and be part of our thriving community!</p>
+                <a href="" class="cta-button">Join Now</a>
+            </section>
+    
+            <section class="events-section">
+                <h2>Current Events</h2>
+                <p>Placeholder content for current events.</p>
+            </section>
+    
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <p>Placeholder content for weather information.</p>
+            </section>
+    
+            <section class="spotlights-section">
+                <!-- Company Spotlights Section -->
+                <h2>Company Spotlights</h2>
+                <p>Savor the authentic flavors of Monterrey at Sabor Local Cuisine. Our chefs craft exquisite dishes using locally sourced ingredients, creating a culinary experience that reflects the rich gastronomic heritage of the region. </p>
+            </section>
+    
+        </main>
+    
+        <footer>
+            <p>Contact Information: Your Contact Details</p>
+            <p>Developed by Your Full Name for WDD 230</p>
+            <p id="lastModified">Last Modified: <script>document.getElementById("lastModified").innerHTML = new Date(document.lastModified).toLocaleString();</script></p>
+        </footer>
+    
+    </main>
+    <footer>
+        <div class="title-footer">
+            <h2>Jacob Mahonri Banda Barboza - WDD230 Project - Monterrey Regional Chamber of Commerce.<p id="lastmodified"></p></h2>
+        </div>    
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

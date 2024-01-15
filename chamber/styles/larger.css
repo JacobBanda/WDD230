@@ -2,7 +2,6 @@
     .navigation {
         display: flex;
         padding: .5rem 1rem;
-        
 	}
 
 	.navigation li {
@@ -12,5 +11,14 @@
 
     .navigation li a {
         padding: .5rem 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li a{
+        color:aliceblue;
+        padding: .8rem;
     }
 }

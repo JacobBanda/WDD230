@@ -5,62 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Banda">
     <meta name="description" content="WDD 230 - Web Frontend Development Jacob Mahonri Banda Barboza course assignment portal">
-    <title>[Jacob Banda] - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="favicon.ico">  
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="icon" href="images/favicon.ico">
+    <title>Monterrey Regional Chamber of Commerce.</title>
     <meta property="og:title" content="WDD 230: Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://media.npr.org/assets/img/2019/11/25/byu-idaho-sign-web_custom-2ae72f4327e557ba4ff2b363d3137528b23374a7-s800-c85.webp">
     <meta property="og:url" content="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2FJacobBanda%2Fwdd230">
+
 </head>
 <body>
+    <div id="message"></div>
     <header>
         <div class="headname">
             <img class="logo" src="images/monterrey-1-logo-black-and-white.webp" alt="Monterrey Logo image">
-            <h1>Monterrey Chamber of Commerce</h1>
-        </div>   
-        <nav>
-            <button id="menu"></button>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li> 
-            </ul>
-        </nav>
+            <h1 class="header-title">Monterrey Chamber of Commerce</h1>
+        </div>     
+        <div>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul id="primaryNav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>   
+    <main>
         <div class="hero">
-            <picture>
-              <img src="images/monterrey_local-office-2_3-.jpg" alt="Monterrey view">
-            </picture>
-            <button class="call-to-action">Join the Event</button>
+            <div class="hero">
+                <img class="banner" src="images/monterrey_local-office-2_3-.jpg" width="10%" height="10%" alt="Monterrey City">
+                       <button class="call-to-action">Join the chamber</button>
+            </div>
         </div>
-        <div class="parent">           
-            <section class="card">
-                <h2>Current events section</h2>
-                <p>empty</p>
-            </section>
         
-            <section class="card">
-                <h2>Weather card section</h2>
-                <p>empty</p>
-            </section>
-
-            <section class="card">
-                <h2>'Spotlights' advertisements.</h2>
-                <h2>Sabor Local Cuisine</h2>
-                <p>Savor the authentic flavors of Monterrey at Sabor Local Cuisine. Our chefs craft exquisite dishes using locally sourced ingredients, creating a culinary experience that reflects the rich gastronomic heritage of the region.</p>
-            </section>
+        <div class="event">
+			<b>Ribbon Cutting - the Diamond Shack.</b><br>
+                Join us for the grand opening of The Diamond Shack, Thursday at 1:00 PM
+            
         </div>
+ 
+        <div class="news">
+            <span id="news-date"><b>Monterrey, Nuevo Leon. Oct. 8, 2023</b></span>
+            <p>In a delightful turn of events in Monterrey, the city's renowned Taco Festival has just been named the "World's Most Delicious Celebration" by a prestigious international food magazine! The annual festival, which showcases Monterrey's culinary prowess with an array of mouthwatering taco creations, has taken the global food scene by storm. Food critics from around the world have been singing praises about the exquisite flavors and innovative taco combinations that Monterrey chefs have been serving up. This prestigious recognition is not only a testament to the city's rich gastronomic culture but also a cause for celebration among Monterrey's taco aficionados. So, if you're a fan of tacos, Monterrey is undoubtedly the place to be for an unforgettable culinary adventure!
+            </p>
+        </div>
+
     </main>
     <footer>
-        <div>
-            <h2>Jacob Mahonri Banda Barboza - WDD230 Project - Monterrey Regional Chamber of Commerce.<p id="lastmodified"></p></h2>
-        </div>    
+        <div class="title-footer">
+            <h2>Monterrey Regional Chamber of Commerce.</h2>
+        </div>          
     </footer>
     <script src="scripts/chamber.js"></script>
 </body>

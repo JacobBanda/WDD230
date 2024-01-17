@@ -128,15 +128,6 @@ nav .active{
 	content: "📍 ";
 }
 
-.stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-	
-}
-
 #mode {
 	position: absolute;
 	top: 1rem;
@@ -145,4 +136,9 @@ nav .active{
 	cursor: pointer;
 	font-size: 2rem;
 }
+
+.card {
+    width: 100%;
+    margin-bottom: 10px; 
+  }
 

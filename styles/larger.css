@@ -30,4 +30,11 @@
 		flex: 1 1 100%;
 	}
 
+	.card {
+		float: left;
+		width: 60%;
+		margin-right: 2%;
+	}
+	
+
 }

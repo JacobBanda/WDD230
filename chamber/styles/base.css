@@ -4,14 +4,31 @@
 	margin: 0;
 	padding: 0;
 	box-sizing:border-box;
-    font-family: 'Lato', sans-serif;
 }
+
+:root {
+    --font-family: "Acme","Inclusive+Sans", swap;
+}
+
 body {
 	font-size: 16px;
+    font-family: var(--font-family);
 }
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
+}
+
+main{
+
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+picture > img{
+    background: #000;
+    animation: fade 15s;
 }
 
 header {
@@ -138,6 +155,7 @@ main {
 	justify-content: center;
 	font-size: 0.85rem;
     padding: 0.5rem;
+    display: grid;
 }
 
 header div {
@@ -230,4 +248,8 @@ span {
     border: none;
 }
 
+.card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 

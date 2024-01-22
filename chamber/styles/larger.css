@@ -22,7 +22,6 @@
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
    
     .menu {
         grid-column: 2/3;
@@ -46,6 +45,23 @@
         height: 100%;
         margin-bottom: 0;
     }
+
+    .parent{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .parent section{
+        box-shadow: 1px 1px 10px black;
+    }
+
+    .card {
+        float: left;
+        width: 60%; 
+        margin-right: 2%;
+      }
+
 
 }
     

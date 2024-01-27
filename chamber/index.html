@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jacob Banda">
     <meta name="description" content="WDD 230 - Web Frontend Development Jacob Mahonri Banda Barboza course assignment portal">
-    <link rel="icon" href="favicon.ico">  
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">  
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+
     <title>Monterrey Regional Chamber of Commerce.</title>
     <meta property="og:title" content="WDD 230: Web Frontend Development">
     <meta property="og:type" content="website">
@@ -20,17 +21,14 @@
     <div id="message"></div>
     <header>
         <div class="headname">
-            <img class="logo" src="images/monterrey-1-logo-black-and-white.webp" alt="Monterrey Logo image">
-            <h1 class="header-title">Monterrey Chamber of Commerce</h1>
+            <img class="logo" src="images/monterrey-1-logo-black-and-white_web.webp" alt="Monterrey Logo image"><h1>Monterrey Chamber of Commerce</h1>
         </div>     
-        <div>
-            <button id="hamburguerBtn"><span>&#9776;</span></button>
-        </div>
-        <div class="menu">
+        <div class="menu">        
             <nav>
+                <button id="hamburguerBtn">☰</button>
                 <ul id="primaryNav">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Contact</a></li> 
@@ -39,35 +37,50 @@
         </div>
     </header>
     <main>
+        <!-- <div class="hero">
+            <img class="banner" src="images/monterrey_local-office-2_3-.jpg" alt="Monterrey City">
+            <button class="call-to-action">Join the chamber</button>
+        </div> -->
         <div class="hero">
-            <div class="hero">
-                <img class="banner" src="images/monterrey_local-office-2_3-.jpg" alt="Monterrey City">
-                       <button class="call-to-action">Join the chamber</button>
-            </div>
+            <picture>
+              <source media="(max-width: 400px)" srcset="images/small_Monterrey_web.webp">
+              <source media="(max-width: 960px)" srcset="images/medium_Sandiego.webp">
+              <img src="images/monterrey_local-office-2_3-.jpg" alt="Monterrey">
+              <button class="call-to-action">Join the chamber</button>
+            </picture>
         </div>
-
-        <div class="parent">           
-            <section class="card">
-                <h2>Current Event Section</h2>
-            </section>
+          
+        <section id="currentEvent">
+            <h1>Current Event Section</h1>
+            <p>In a delightful turn of events in Monterrey, the city's renowned Taco Festival has just been named the "World's Most Delicious Celebration" by a prestigious 
+                international food magazine! The annual festival, which showcases Monterrey's culinary prowess with an array of mouthwatering taco creations, has taken the
+                 global food scene by storm. Food critics from around the world have been singing praises about the exquisite flavors and innovative taco combinations that 
+                 Monterrey chefs have been serving up. This prestigious recognition is not only a testament to the city's rich gastronomic culture but also a cause for 
+                 celebration among Monterrey's taco aficionados. So, if you're a fan of tacos, Monterrey is undoubtedly the place to be for an unforgettable culinary adventure!
+            </p>
+        </section>
         
-            <section class="card">
-                <h2>Weather Section</h2>
-            </section>
+        <section id="weatherSection">
+            <h1>Weather Section</h1>
+            <p>more information in the future.</p>
+        </section>
 
-            <section class="card">
-                <h2>'Spotlights' advertisements</h2>
-                <h2> Sabor Local Cuisine</h2>
-                <p>Savor the authentic flavors of Monterrey at Sabor Local Cuisine. Our chefs craft exquisite dishes using locally sourced ingredients, creating a culinary experience that reflects the rich gastronomic heritage of the region.</p>
-            </section>
-        </div>
+        <section id="SpotlightsSection">
+            <h1>'Spotlights' advertisements</h1>
+            <h2> Sabor Local Cuisine</h2>
+            <p>Savor the authentic flavors of Monterrey at Sabor Local Cuisine. Our chefs craft exquisite dishes using locally sourced ingredients, creating a culinary experience that reflects the rich gastronomic heritage of the region.</p>
+        </section>
 
     </main>
-    <footer>
+    <!-- <footer>
         <div class="title-footer">
             <h2>Jacob Banda - Project WDD230: Monterrey Regional Chamber of Commerce.</h2><p id="lastmodified"></p>
         </div>          
+    </footer> -->
+    <footer>
+        <a>&copy; <span id="currentyear"></span> Jacob Banda - Mexico 🇲🇽 </a>&nbsp;&nbsp;&nbsp;<a id="lastmodified"></a>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/burgermenu.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+@media screen and (min-width: 1000px) {
+
+    #myButton {
+        display: none;
+    }
+
+    header span {
+        margin: auto auto;
+    }
+    
+    nav {
+        height: 3.7rem;
+    }
+    
+    nav .menulinks{
+        display:flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+        justify-items: center;
+       /* margin-top: -7.6rem;*/
+    }
+
+    main h1 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    
+    .card {
+        grid-area: 3 / 1 / 6 / 2;
+    }
+
+
+    .card:nth-of-type(2) {
+        padding-top: 0rem;
+        margin-bottom: 0rem;
+        grid-area: 3 / 4 / 6 / 2;
+    }
+
+    .hero{
+        grid-column: 1 / 3;
+    }
+
+    .hero span{
+        font-size: 2rem;
+    }
+
+    .map{
+        grid-column: 1 / 3;
+    }
+
+    .map iframe{
+        width: 1850px;
+        height: 400px;
+    }
+
+}

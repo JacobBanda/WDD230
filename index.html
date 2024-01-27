@@ -6,9 +6,9 @@
     <meta name="author" content="Jacob Banda">
     <meta name="description" content="WDD 230 - Web Frontend Development Jacob Mahonri Banda Barboza course assignment portal">
     <title>[Jacob Banda] - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="WDD 230: Web Frontend Development">
     <meta property="og:type" content="website">
@@ -20,55 +20,69 @@
         🕶️
     </div>
     <header>
-        <img src="images/profile.jpg" alt="Jacob Banda" width="75" height="100">
-        <h1>Jacob Banda</h1>
-
+        <!--<span><img id="profilePhoto" src="images/profile.jpg" alt="Profile Photo"> &nbsp;&nbsp;&nbsp;Jacob Banda</span>-->
+        <div class="topname">
+            <img id="profilePhoto" src="images/profile.jpg" alt="Profile Photo"><h1>Jacob Banda</h1>
+        </div>
     </header>
     <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-            <li><a href="">Home</a></li>
+        <button id = myButton>☰</button>
+        <ul class = "menulinks">
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href="">Form</a></li>
+            <li><a>Site Plan</a></li>
+            <li><a>Form</a></li>
         </ul>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="parent">           
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01:<a href="Week01/holygrail.html">Holy Grail</a></li>
-                </ul>
-                <ul>
-                    <li>Week 02:
-                        <a href="https://codepen.io/JacobBanda/full/gOZjpqL">Hamburger" Menu</a>
-                        <a href="week02/bom.html">BOM</a>
-                    </li>     
-                </ul>
-                <ul>
-                    <li>Week 03: 
-                        <a href="week03/images/landscape.webp">WebP</a>
-                        <a href="week03/lazyload.html">Lazyload</a>
-                        <a href="week03/responsive-images.html">Responsive Images</a>
-                        <a href="week03/bom.html">BOM</a>
-                    </li>
-                </ul>
-            </section>
-        
-            <section class="card">
-                <h2>Information</h2>
-                <p>weather information</p>
-                <p>page visits</p>
-            </section>
+        <div class="hero">
+            <picture>
+              <source media="(max-width: 400px)" srcset="images/small_Sandiego.webp">
+              <source media="(max-width: 960px)" srcset="images/medium_Sandiego.webp">
+              <img src="images/medium_Sandiego.webp" alt="Temple Mexico">
+              <span>San Diego Temple</span>
+            </picture>
         </div>
-        
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>
+                    Week 01: [ <a href="week01/holygrail.html">Layout</a> ] - [<a href="week01/media-query.html">Media Query</a> ] - [ <a href="https://codepen.io/iok-1sun/pen/mdorNwY" target="_blank" rel="noopener noreferrer">JS Pen</a> ]
+                </li>
+                <li>
+                    Week 02: [ <a href="week02/design.html>">Web Design Principles</a> ] - [ <a href="https://codepen.io/iok-1sun/pen/abMWWQj?editors=0110">Responsive "Hamburger" Menu</a> ] - [ <a href="week02/bom.html">DOM manipulation</a>]
+                </li>
+                <li>
+                    Week 03:
+                </li>
+                <li>
+                    Week 04:
+                </li>
+                <li>
+                    Week 05:
+                </li>
+                <li>
+                    Week 06:
+                </li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <p class="page-visit">Visit Count: <span id="visitCount"></span></p>
+        </section>
+        <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114722.28482039292!2d-98.37860386938405!3d26.031219734200715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866509e70b1ab591%3A0x4568c85f5cba4884!2sReynosa%2C%20Tamps.!5e0!3m2!1ses-419!2smx!4v1696097500201!5m2!1ses-419!2smx"
+              loading="lazy"></iframe>
+        </section> 
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Jacob Banda - Mexico</p>
-        <p id="lastmodified"></p>
+        <a>&copy; <span id="currentyear"></span> Jacob Banda - Mexico 🇲🇽 </a>&nbsp;&nbsp;&nbsp;<a id="lastmodified"></a>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visitcount.js"></script>
 </body>
 </html>

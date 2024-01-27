@@ -1,131 +1,49 @@
-/* Use the Google Fonts API to select one or two fonts to use on the page. */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --font-family-heading: 'Fjalla One', sans-serif;
+    --font-family-body: 'Roboto', sans-serif;
+  }
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --font-family: "Open Sans", monospace, san-serif;
-}
 
-html {
-    background-color: #F7F7F7;
-    box-sizing: border-box;
-} 
-
-body{
-  font-family: var(--font-family);
-  font-size: 1.44rem;
-  background-image: var(--bg-img);
-  background-size: cover;
-}
-
-main{
+/*Mobile Layout*/
+body {
+    min-height: 100vh;
+    font-family: var(--font-family-body);
     display: grid;
 }
 
-nav{
-    background-color: green;
-}
-nav ul{
-    list-style-type: none;
-}
-nav a{
-    color: #fff;
+/*Header*/
+
+header {
+    background-color: #A9B388;
     text-align: center;
-    padding: .5rem;
-    text-decoration: none;
+    color: #ffffff;
 }
 
-nav a:hover{
-    background-color: black;
+.topname{
+    display: grid;
+    grid-template-columns: 15% 1fr;
 }
 
-nav .active{
-    background-color: rgba(0, 0, 0, 3);
+#profilePhoto {
+    width: 130px;
+    height: auto;
+    border-radius: 15px;
 }
 
-.parent {
-    margin: 1rem 2vw;
-}
-
-.parent section{
-    border: 1px solid #415541;
-    background-color: #e9f5e9;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-}
-
-.parent span{
-    background-color: #415541;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-}
-
-.parent p {
-    padding: 10px;
-}
-
-/*Hamburguer nav*/
-
-#menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "Exit";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
-.navigation li {
-	display: none;
-}
-.navigation li a {
-	display: block;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation li a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-	display: block;
-	width: 100%;
-}
-.open li a {
-	display: block;
-}
-
-.active::before {
-	content: "📍 ";
+header span {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 #mode {
@@ -137,8 +55,132 @@ nav .active{
 	font-size: 2rem;
 }
 
-.card {
-    width: 100%;
-    margin-bottom: 10px; 
-  }
+#myButton {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
 
+/*Nav*/
+nav {
+    background-color: #6D2932;
+    color: #ffffff;
+    justify-items: center;
+}
+
+nav .menulinks {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-family-body);
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+nav a:hover {
+    background-color: #E0E1DD;
+    color:#000000
+}
+
+
+
+/*Main*/
+main{
+    display: grid;
+    justify-items: center;
+}
+
+
+main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family-heading);
+}
+
+/*.hero*/
+.hero{
+    position:relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero span{
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+/*.card (section)*/
+.card h2 {
+    text-align: center;
+    background-color: #6D2932;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+    border: 1px solid #0D1B2A;
+    border-radius: 3px;
+    
+}
+
+.card li {
+    padding: 0.2rem;
+    font-family: var(--font-family-body);
+}
+
+.card p {
+    padding: 1rem;
+    border: 1px solid #0D1B2A;
+}
+
+.card:nth-of-type(2) {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*map*/
+.map{
+    
+}
+
+/*Footer*/
+footer {
+    background-color: #B99470;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+#lastModified {
+    color: #ffffff;
+}

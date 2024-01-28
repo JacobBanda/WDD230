@@ -81,9 +81,14 @@ main h1 {
 }
 
 main div {
-    background-color: #7f9494;
+    background-color: #2265e0;
     margin-bottom: 10px;
     padding: 10px;
+}
+
+
+.sidebar2 h1{
+    color: #ffffff;
 }
 /*
 .hero {

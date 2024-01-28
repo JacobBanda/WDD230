@@ -127,7 +127,66 @@
         transform: scale(1.1);
     }
 
+    #titleForm{
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    #formJoin{
+        display: grid;
+        justify-items: center;
+        grid-area: 2 / 2 / 4 / 3;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #asideJoin{
+        grid-area: 2 / 3 / 3 / 4;
+        display: grid;
+        justify-items: center;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    #formJoin label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    #formJoin input,
+    #formJoin select,
+    #formJoin output {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .submitBtn {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
     
+    .submitBtn:hover {
+        background-color: #217dbb;
+      }
 
 }
     

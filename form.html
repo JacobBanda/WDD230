@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Banda">
+    <meta name="description" content="WDD 230 - Web Frontend Development Jacob Mahonri Banda Barboza course assignment portal">
+    <title>[Jacob Banda] - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD 230: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.npr.org/assets/img/2019/11/25/byu-idaho-sign-web_custom-2ae72f4327e557ba4ff2b363d3137528b23374a7-s800-c85.webp">
+    <meta property="og:url" content="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2FJacobBanda%2Fwdd230">
+</head>
+<body>
+    <div id="mode">
+        🕶️
+    </div>
+    <header>
+        <!--<span><img id="profilePhoto" src="images/profile.jpg" alt="Profile Photo"> &nbsp;&nbsp;&nbsp;Jacob Banda</span>-->
+        <div class="topname">
+            <img id="profilePhoto" src="images/profile_web.webp" alt="Profile Photo"><h1>Jacob Banda</h1>
+        </div>
+    </header>
+    <nav>
+        <button id = myButton>☰</button>
+        <ul class = "menulinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a>Site Plan</a></li>
+            <li><a>Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="fh1">User Registration Form</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Account Information</legend>
+                <label class="top">Username* <input type="text" name="username" id="username" required></label>
+                <label class="top">Password* <input type="password" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required></label>
+                <label class="top">Confirm Password* <input type="password" name="confirm_password" id="confirm_password" required></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Feedback</legend>
+                <input type="range" name="rating" id="rating" min="1" max="10" step="1" oninput="this.form.elements['ratingOutput'].value = this.value">
+                <label class="top">Current Value: <output name="ratingOutput" for="rating">5</output></label>
+            </fieldset>
+    
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <a>&copy; <span id="currentyear"></span> Jacob Banda - Mexico 🇲🇽 </a>&nbsp;&nbsp;&nbsp;<a id="lastmodified"></a>
+    </footer>
+</body>
+</html>

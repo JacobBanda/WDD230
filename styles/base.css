@@ -23,9 +23,9 @@ body {
 /*Header*/
 
 header {
-    background-color: #A9B388;
+    background-color: #af947a;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 .topname{
@@ -172,7 +172,7 @@ main h1 {
 
 /*Footer*/
 footer {
-    background-color: #B99470;
+    background-color: #495031;
     color: #ffffff;
     padding: 1rem;
 }

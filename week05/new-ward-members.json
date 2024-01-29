@@ -1,0 +1,65 @@
+{
+    "ward_members": [
+      {
+        "family_name": "Hernandez",
+        "move_in_date": "2022-05-20",
+        "number_of_people": 5,
+        "visited_by_bishopric": true,
+        "family_members": [
+          {
+            "name": "Juan Hernandez",
+            "gender": "Male",
+            "birthdate": "1982-03-15"
+          },
+          {
+            "name": "Maria Hernandez",
+            "gender": "Female",
+            "birthdate": "1985-08-22"
+          },
+          {
+            "name": "Alejandro Hernandez",
+            "gender": "Male",
+            "birthdate": "2010-11-10"
+          },
+          {
+            "name": "Rosa Hernandez",
+            "gender": "Female",
+            "birthdate": "2015-02-25"
+          },
+          {
+            "name": "Carlos Hernandez",
+            "gender": "Male",
+            "birthdate": "2020-09-05"
+          }
+        ]
+      },
+      {
+        "family_name": "Garcia",
+        "move_in_date": "2023-01-10",
+        "number_of_people": 4,
+        "visited_by_bishopric": false,
+        "family_members": [
+          {
+            "name": "Luis Garcia",
+            "gender": "Male",
+            "birthdate": "1978-12-03"
+          },
+          {
+            "name": "Ana Garcia",
+            "gender": "Female",
+            "birthdate": "1980-05-18"
+          },
+          {
+            "name": "Eduardo Garcia",
+            "gender": "Male",
+            "birthdate": "2005-08-08"
+          },
+          {
+            "name": "Sofia Garcia",
+            "gender": "Female",
+            "birthdate": "2012-11-20"
+          }
+        ]
+      }
+    ]
+  }

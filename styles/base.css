@@ -134,7 +134,7 @@ main h1 {
 }
 
 /*.card (section)*/
-.card h2 {
+section h2 {
     text-align: center;
     background-color: #6D2932;
     color: #ffffff;
@@ -142,7 +142,7 @@ main h1 {
     border-radius: 2px;
 }
 
-.card ul {
+section ul {
     list-style-type: none;
     padding: 1rem;
     border: 1px solid #0D1B2A;
@@ -150,20 +150,22 @@ main h1 {
     
 }
 
-.card li {
+section li {
     padding: 0.2rem;
     font-family: var(--font-family-body);
 }
 
-.card p {
+section p {
     padding: 1rem;
     border: 1px solid #0D1B2A;
 }
 
-.card:nth-of-type(2) {
+section:nth-of-type(2) {
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
+
+
 
 /*map*/
 .map{

@@ -20,8 +20,11 @@ getLinks();
 
 
 // Function to display links
-function displayLinks(weeks) {
+function displayLinks(data) {
   const cardsSection = document.querySelector('#cards');
+
+  // Check if the data is an array or an object
+  const weeks = Array.isArray(data) ? data : (data.weeks || []);
 
   weeks.forEach(week => {
     const listItem = document.createElement('li');

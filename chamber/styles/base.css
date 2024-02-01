@@ -4,6 +4,7 @@
 :root {
     --font-family-heading: 'Fjalla One', sans-serif;
     --font-family-body: 'Roboto', sans-serif;
+    --base-spacing: 8px;
 }
 
 * {

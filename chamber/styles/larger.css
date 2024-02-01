@@ -186,7 +186,13 @@
     
     .submitBtn:hover {
         background-color: #217dbb;
-      }
+    }
+
+    .menu button.active {
+        background-color: #9f9; /* Set a background color for the active button */
+    }
+
+
 
 }
     

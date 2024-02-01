@@ -1,0 +1,67 @@
+{
+    "companies": [
+      {
+        "name": "Grupo Bimbo",
+        "address": "Avenida del Pan 123, Ciudad, Estado, México",
+        "phone": "+52 123 456 7890",
+        "website": "http://www.grupobimbo.mx",
+        "image": "https://es.m.wikipedia.org/wiki/Archivo:Logo_Grupo_BIMBO.svg#/media/File%3AORGANIZACION_GRUPO_BIMBO-01.png",
+        "membership_level": "Gold",
+        "other_info": "Leading bakery and food processing company."
+      },
+      {
+        "name": "Coca-Cola México",
+        "address": "Calle Refresco 456, Pueblo, Estado, México",
+        "phone": "+52 987 654 3210",
+        "website": "http://www.coca-colamexico.mx",
+        "image": "coca_cola_icon.png",
+        "membership_level": "Silver",
+        "other_info": "Global beverage giant with a focus on soft drinks."
+      },
+      {
+        "name": "Tesla México",
+        "address": "Avenida Eléctrica 789, Villa, Estado, México",
+        "phone": "+52 456 789 0123",
+        "website": "http://www.teslamexico.mx",
+        "image": "tesla_icon.png",
+        "membership_level": "Bronze",
+        "other_info": "Innovative electric vehicle and clean energy company."
+      },
+      {
+        "name": "Grupo Modelo",
+        "address": "Carr. Cervecera 234, Pueblo, Estado, México",
+        "phone": "+52 789 012 3456",
+        "website": "http://www.grupomodelo.mx",
+        "image": "grupo_modelo_icon.png",
+        "membership_level": "Platinum",
+        "other_info": "Major brewing company, known for brands like Corona."
+      },
+      {
+        "name": "PepsiCo México",
+        "address": "Plaza Refrescante 567, Ciudad, Estado, México",
+        "phone": "+52 345 678 9012",
+        "website": "http://www.pepsico.mx",
+        "image": "pepsico_icon.png",
+        "membership_level": "Gold",
+        "other_info": "Multinational food and beverage company."
+      },
+      {
+        "name": "Grupo Modelo",
+        "address": "Calle Innovadora 890, Pueblo, Estado, México",
+        "phone": "+52 901 234 5678",
+        "website": "http://www.grupomodelo.mx",
+        "image": "grupo_modelo_icon.png",
+        "membership_level": "Silver",
+        "other_info": "Innovative leader in the brewing industry."
+      },
+      {
+        "name": "General Motors de México",
+        "address": "Avenida Automotriz 1234, Ciudad, Estado, México",
+        "phone": "+52 123 456 7890",
+        "website": "http://www.gmmexico.mx",
+        "image": "gm_mexico_icon.png",
+        "membership_level": "Bronze",
+        "other_info": "Global automotive company with a strong presence in Mexico."
+      }
+    ]
+  }
